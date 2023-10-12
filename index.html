@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            color: white;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        body {
+            width: 100%;
+            height: 100%;
+            background-color: blue;
+        }
+        .bot {
+            width: 70%;
+            height: 5vh;
+            border-radius: 25px;
+            margin: 2%;
+            border: 1px solid grey;
+        }
+        .dis {
+            display: flex;
+            flex-direction: row;
+        }
+        .signup {
+            background-color: white; 
+            width: 40%; 
+            text-align: center; 
+            height: 65vh;
+            border: 5px solid orangered;
+        }
+        .fit1 {
+            flex-basis: 180px;
+        }
+        .fit2 {
+            flex-basis: 380px;
+        }
+        @media  (max-width: 900px) {
+            .dis {
+                flex-direction: column;
+            }
+            .signup {
+                width: 80%;
+                height: 50vh;
+            }
+            .fit1 {
+                flex-basis: auto;
+            }
+            .fit2 {
+                flex-basis: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div style="margin: 5% 10%;">
+        <div style="margin: 1%;" class="dis">
+            <h3  style="flex-grow: 2;" class="fit1">Startup 3</h3>
+            <div style="display: flex; justify-content: space-between;" class="fit2">
+                <a aria-disabled="true" style="color: grey;">Overview</a>
+                <a href="/LoginPage.html">Prices</a>
+                <a href="/LoginPage.html">Blog</a>
+                <a href="/LoginPage.html">Feedback</a>
+                <a><button type="button" style="background-color: rgb(189, 35, 35); border: 1px solid grey; border-radius: 12px; margin-top: -12px; height: 4vh;">Purchase</button></a>
+            </div>
+        </div>
+        <div class="dis" style="justify-content: space-between;">
+            <div style="width: 40%;">
+                <div style="font-size: 2em;">
+                    <h1>Generate Awesome Web Pages</h1>
+                </div>
+                <div>
+                    The most important part of the Startup is the samples. The samples form a set of 25 usable pages you can use as is or you can add new blocks.
+                </div>
+                <div>
+                    <button type="button" style="background-color: rgb(189, 35, 35); border: 1px solid grey; border-radius: 12px; margin: 2% 0; height: 4vh;">Learn More</button>
+                </div>
+            </div>
+            <div class="signup">
+                <h2 style="color: black;">Sign Up Now</h2>
+                <form action="">
+                    <input type="email" placeholder="Your email" class="bot"><br/>
+                    <input type="password" placeholder="Your password" class="bot"><br/>
+                    <label><input type="checkbox"> <span style="color: grey; font-size: small;">I agree to the Terms of Service</span></label><br/>
+                    <button type="submit" class="bot" style="background-color: blue;">Sign In</button>
+                    <p style="color: grey;">or</p>
+                    <button type="button" class="bot" style="background-color: rgb(96, 195, 234);">Login via Twitter</button>
+                    <p style="color: grey;">Do you have an account? <a style="color:skyblue;" href="/LoginPage.html">Sign in</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
